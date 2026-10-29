@@ -1,0 +1,68 @@
+:root {
+  color: #243247;
+  background: #f4f7fb;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Keep the demo readable and centered on wide screens. */
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 5vw, 3rem);
+}
+
+/* Page title and section headings. */
+h1 {
+  margin: 0 0 1.75rem;
+  color: #173f70;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  line-height: 1.2;
+  text-align: center;
+}
+
+h2 {
+  margin: 1.75rem 0 0.65rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #d9e4f0;
+  color: #28537d;
+  font-size: 1.2rem;
+}
+
+/* Style the date and the results produced by script.js. */
+#dateOutput,
+#numberConversionOutput,
+#mathOutput,
+#conditionalOutput {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  border: 1px solid #dce5ef;
+  border-left: 4px solid #4385c5;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgb(28 55 85 / 7%);
+  overflow-wrap: anywhere;
+}
+
+/* Reduce padding on narrow screens. */
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  #dateOutput,
+  #numberConversionOutput,
+  #mathOutput,
+  #conditionalOutput {
+    padding: 0.85rem;
+  }
+}
